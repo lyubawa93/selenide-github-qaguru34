@@ -20,7 +20,7 @@ public class SelenideGithubTests {
         Configuration.timeout = 5000; // default 4000
     }
     @Test
-    void checkSoftAssertionsPage() {
+    void checkSoftAssertionsPageTest() {
         open("/selenide/selenide");
         $("#wiki-tab").click();
         $("#wiki-pages-box").$(byText("Show 3 more pages…")).click();
